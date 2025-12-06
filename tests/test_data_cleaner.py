@@ -109,7 +109,7 @@ class TestDataCleaner(unittest.TestCase):
     df = make_sample_df()
     cleaner = DataCleaner()
     with self.assertRaises(KeyError):
-        cleaner.drop_invalid_rows(df, ["does_not_exist"])
+        cleaner.drop_invalid_rows(df, ["does_not__exist"])
 
     def test_trim_strings_strips_whitespace_without_changing_other_columns(self):
         """Test que verifica que el método trim_strings elimina correctamente los espacios
